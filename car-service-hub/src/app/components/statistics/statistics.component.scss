@@ -1,0 +1,24 @@
+.card {
+  @apply bg-white rounded-lg shadow-lg p-4;
+}
+
+.card-title {
+  @apply text-center text-2xl font-bold mb-4;
+}
+
+.card-title-sub {
+  @apply text-center text-xl font-bold mb-4;
+}
+
+.card-field {
+  @apply bg-gray-100 rounded-lg p-4;
+  @apply flex items-center justify-center text-center;
+}
+
+.status-card {
+  @apply w-full p-4 rounded shadow flex items-center justify-center text-center;
+}
+
+.jobs-status {
+  @apply mt-4 grid grid-cols-1 gap-4;
+}

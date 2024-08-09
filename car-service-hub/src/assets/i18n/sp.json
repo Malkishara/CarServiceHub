@@ -1,0 +1,20 @@
+{
+  "TITLE": "Coches",
+  "MODEL": "Modelo",
+  "REGISTRATION": "Matrícula",
+  "ADD_JOB": "Agregar Trabajo",
+  "PENDING": "Pendiente",
+  "IN_PROGRESS": "En Progreso",
+  "COMPLETED": "Completado",
+  "ADD_CAR": "Agregar Coche",
+  "ADD_NEW_CAR": "Agregar Nuevo Coche",
+  "CAR_MODEL": "Modelo de Coche",
+  "CAR_REGISTRATION_NUMBER": "Número de Matrícula del Coche",
+  "CANCEL": "Cancelar",
+  "DASHBOARD": "Panel de Control",
+  "JOB_DESCRIPTION": "Descripción del Trabajo",
+  "STATUS": "Estado",
+  "SERVICE_CENTER_STATISTICS": "Estadísticas del Centro de Servicio",
+  "TOTAL_CARS": "Total de Coches",
+  "JOBS_STATUS_COUNTS": "Conteo de Estados de Trabajos"
+}

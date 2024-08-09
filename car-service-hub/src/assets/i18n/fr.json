@@ -1,0 +1,20 @@
+{
+  "TITLE": "Voitures",
+  "MODEL": "Modèle",
+  "REGISTRATION": "Immatriculation",
+  "ADD_JOB": "Ajouter un Travail",
+  "PENDING": "En Attente",
+  "IN_PROGRESS": "En Cours",
+  "COMPLETED": "Terminé",
+  "ADD_CAR": "Ajouter une Voiture",
+  "ADD_NEW_CAR": "Ajouter une Nouvelle Voiture",
+  "CAR_MODEL": "Modèle de Voiture",
+  "CAR_REGISTRATION_NUMBER": "Numéro d'Immatriculation de Voiture",
+  "CANCEL": "Annuler",
+  "DASHBOARD": "Tableau de Bord",
+  "JOB_DESCRIPTION": "Description du Travail",
+  "STATUS": "Statut",
+  "SERVICE_CENTER_STATISTICS": "Statistiques du Centre de Service",
+  "TOTAL_CARS": "Total des Voitures",
+  "JOBS_STATUS_COUNTS": "Nombre de Statuts des Travaux"
+}

@@ -1,0 +1,36 @@
+<div class="p-4">
+  <h2 class="text-xl font-bold mb-4">{{ 'ADD_JOB' | translate }}</h2>
+  <form (ngSubmit)="addJob()">
+    <!-- Job Description -->
+    <label for="jobDescription" class="block mb-2">{{ 'JOB_DESCRIPTION' | translate }}:</label>
+    <input
+      type="text"
+      id="jobDescription"
+      [(ngModel)]="description"
+      name="description"
+      class="border p-2 rounded w-full mb-4"
+      placeholder="Enter job description"
+      required
+    />
+
+    <!-- Status -->
+    <label for="status" class="block mb-2">{{ 'STATUS' | translate }}:</label>
+    <select
+      id="status"
+      [(ngModel)]="status"
+      name="status"
+      class="border p-2 rounded w-full mb-4"
+    >
+      <option value="pending">{{ 'PENDING' | translate }}</option>
+      <option value="in-progress">{{ 'IN_PROGRESS' | translate }}</option>
+      <option value="completed">{{ 'COMPLETED' | translate }}</option>
+    </select>
+
+    <button
+      type="submit"
+      class="bg-purple-500 text-white p-2 rounded hover:bg-purple-600"
+    >
+      {{ 'ADD_JOB' | translate }}
+    </button>
+  </form>
+</div>

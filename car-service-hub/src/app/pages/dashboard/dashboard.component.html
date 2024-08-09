@@ -1,0 +1,30 @@
+<div class="container p-4">
+  <div class="flex flex-col sm:flex-row items-center justify-between mb-4">
+    <h1 class="text-4xl font-bold mb-2 sm:mb-0 text-center flex-1">{{ 'DASHBOARD' | translate }}</h1>
+    <select (change)="switchLanguage($event)"
+      class="w-full sm:w-auto ml-auto border border-gray-300 rounded-lg p-2 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out">
+      <option [selected]="lang==='en'" value="en">English</option>
+      <option [selected]="lang==='fr'" value="fr">French</option>
+      <option [selected]="lang==='sp'" value="sp">Spanish</option>
+    </select>
+  </div>
+
+  <div class="mb-4">
+    <button class="w-full sm:w-auto bg-purple-500 text-white p-2 rounded hover:bg-purple-600"
+      (click)="showAddCarModal()">
+      {{ 'ADD_CAR' | translate }}
+    </button>
+  </div>
+
+  <div class="flex flex-col lg:flex-row justify-between">
+    <div class="w-full lg:w-1/2 mb-4 lg:mb-0 lg:pr-2">
+      <app-display-cars></app-display-cars>
+    </div>
+    <div class="w-full lg:w-1/2 lg:pl-2">
+      <app-statistics></app-statistics>
+    </div>
+  </div>
+
+  <app-add-car *ngIf="isModalVisible" (closeModal)="hideAddCarModal()">
+  </app-add-car>
+</div>

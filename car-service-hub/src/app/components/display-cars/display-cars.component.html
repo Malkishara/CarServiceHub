@@ -1,0 +1,28 @@
+<div class="p-4 max-h-[68vh] overflow-y-auto">
+  <h1 class="text-2xl font-bold mb-4">{{ 'TITLE' | translate }}</h1>
+  <div *ngFor="let car of cars" class="mb-4">
+    <h2 class="text-xl font-bold mb-2">{{ car.model }} ({{ car.registration }})</h2>
+    <button
+      class="bg-purple-500 text-white p-2 rounded hover:bg-purple-600"
+      (click)="showAddJobForm(car.id)"
+    >
+      {{ 'ADD_JOB' | translate }}
+    </button>
+    <div *ngIf="selectedCarId === car.id && showAddJob">
+      <app-add-job
+        [carId]="car.id"
+        (jobAdded)="onJobAdded()"
+      ></app-add-job>
+    </div>
+    <ul>
+      <li *ngFor="let job of car.jobs; let i = index" class="flex items-center justify-between mb-2">
+        <span>{{ job.description }} - {{ job.status }}</span>
+        <select (change)="updateJobStatus(car.id, i, $event)" class="ml-2 border border-gray-300 rounded p-1">
+          <option value="pending" [selected]="job.status === 'pending'">{{ 'PENDING' | translate }}</option>
+          <option value="in-progress" [selected]="job.status === 'in-progress'">{{ 'IN_PROGRESS' | translate }}</option>
+          <option value="completed" [selected]="job.status === 'completed'">{{ 'COMPLETED' | translate }}</option>
+        </select>
+      </li>
+    </ul>
+  </div>
+</div>

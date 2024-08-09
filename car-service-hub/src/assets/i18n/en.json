@@ -1,0 +1,20 @@
+{
+  "TITLE": "Cars",
+  "MODEL": "Model",
+  "REGISTRATION": "Registration",
+  "ADD_JOB": "Add Job",
+  "PENDING": "Pending",
+  "IN_PROGRESS": "In Progress",
+  "COMPLETED": "Completed",
+  "ADD_CAR": "Add Car",
+  "ADD_NEW_CAR": "Add New Car",
+  "CAR_MODEL": "Car Model",
+  "CAR_REGISTRATION_NUMBER": "Car Registration Number",
+  "CANCEL": "Cancel",
+  "DASHBOARD": "Dashboard",
+  "JOB_DESCRIPTION": "Job Description",
+  "STATUS": "Status",
+  "SERVICE_CENTER_STATISTICS": "Service Center Statistics",
+  "TOTAL_CARS": "Total Cars",
+  "JOBS_STATUS_COUNTS": "Jobs Status Counts"
+}
